@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+/* ------------------------------------HEADER--------------------------------- */
+@keyframes fade-inout {
+    100% {opacity: 1;}
+    0% {opacity: 0;}
+}
+main {
+    animation: fade-inout 2.5s normal;
+}
+
+/* Kabuuang header */
+header {
+    background-color: white;
+    padding: 10px;
+    color: #444141;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Layout ng container nung navigations */
+nav {
+    display: flex;
+    align-items: center;
+}
+/* Design ng mga navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+/* Distance ng bawat navigations */
+nav li {
+    margin-right: 35px;
+    font-size: 14px;
+    transition: 0.4s;
+}
+/* Design kapag naka-point yung mouse sa bawat navigations (About me, etc.) */
+nav li:hover {
+    margin-top: 20px;
+}
+/* Design ng anchors */
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+/* Animation kapag pinindot */
+nav a:hover {
+    transform: scale(1.1);
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(215, 148, 61);
+    padding: 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+/* Layout ng logo ko */
+.header-my-picture {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px transparent;
+    overflow: hidden;
+    margin-left: 10px;
+}
+/* Layout ng mismong image ng logo ko */
+.header-my-picture img {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+/* Animation kapag naka-point yung mouse sa logo */
+.header-my-picture img:hover {
+    transform: scale(1.2);
+}
+/* Layout ng logo name ko */
+.header-my-name a {
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+/* Animation kapag naka-point yung mouse sa logo name */
+.header-my-name a:hover {
+    transition: 0.4s;
+    color: rgb(215, 148, 61);
+}
+
+
+/* ------------------------------------BODY--------------------------------- */
+
+/* SKILSS HEADING */
+.skills-introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.skills-introduction h3 {
+    font-size: 40px;
+    font-family: light;
+    margin-bottom: 20px;
+}
+/* LIST */
+main img {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height: 100px;
+}
+main p {
+    height: 200px;
+    width: 350px;
+    text-align: center;
+}
+h5 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.my-skills-list{
+    height: 150vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px 100px;
+}
+.my-skills-list article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -10px -10px 10px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+                inset -10px -10px 10px rgba(255,255,255,0.2),
+                inset 15px 15px 15px rgba(0,0,0,0.1);
+}
+/* ------------------------------------FOOTER--------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 245, 214);
+    position: absolute;
+    top: 1600px;
+    height: 60px;
+    width: 1519px;
+}
+footer img {
+    margin-right: 5px;
+    height: 20px;
+}

@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+/* ------------------------------------HEADER--------------------------------- */
+
+/* Kabuuang header */
+header {
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Layout ng container nung navigations */
+nav {
+    display: flex;
+    align-items: center;
+}
+/* Design ng mga navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+/* Distance ng bawat navigations */
+nav li {
+    margin-right: 35px;
+    font-size: 14px;
+    transition: 0.4s;
+}
+/* Design kapag naka-point yung mouse sa bawat navigations (About me, etc.) */
+nav li:hover {
+    margin-top: 20px;
+}
+/* Design ng anchors */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+}
+/* Animation kapag pinindot */
+nav a:hover {
+    transform: scale(1.1);
+    font-weight: bolder;
+    color: #444141;
+    background-color: rgb(211, 213, 214);
+    padding: 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+/* Layout ng logo ko */
+.header-my-picture {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px transparent;
+    overflow: hidden;
+    margin-left: 10px;
+}
+/* Layout ng mismong image ng logo ko */
+.header-my-picture img {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+/* Animation kapag naka-point yung mouse sa logo */
+.header-my-picture img:hover {
+    transform: scale(1.2);
+}
+/* Layout ng logo name ko */
+.header-my-name a {
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+/* Animation kapag naka-point yung mouse sa logo name */
+.header-my-name a:hover {
+    transition: 0.4s;
+    color: rgb(45, 43, 43);
+}
+
+/* ------------------------------------BODY--------------------------------- */
+@keyframes fade-inout {
+    100% {opacity: 1;}
+    0% {opacity: 0;}
+}
+/* Layout ng background image ng sa body */
+.background-image img {
+    position: absolute;
+    top: -390px;
+    z-index: -1;
+    height: 900px;
+    width: 1519px; 
+    animation: fade-inout 2.5s normal;
+}
+/* Layout ng kabuuang box or container ng introduction ko */
+.my-introduction-container {
+    position: relative;
+    top: 350px;
+    left: 220px;
+    height: 500px;
+    width: 1050px;
+    background-color: #fff;
+    border-radius: 1%;
+    border-color: #201f1f;
+    filter: drop-shadow(0px 0px 30px rgb(92, 90, 90));
+    animation: fade-inout 2.5s normal;
+}
+
+/* Layout ng image sa introduction */
+.my-introduction-container img {
+    position: relative;
+    height: 400px;
+    margin: 50px;
+    border-radius: 10px 10px 10px 10px;
+    animation: fade-inout 3s normal;
+}
+/* Layout ng container para sa introduction */
+.my-introduction-letter {
+    position: absolute;
+    top: 65px;
+    left: 530px;
+    height: 385px;
+    width: 450px;
+    animation: fade-inout 3s normal;
+}
+/* Layout para sa mismong heading */
+.name-introduction h3{
+    position: relative;
+    font-size: 50px;
+}
+/* Layout para sa paragraph */
+.paragraph-introduction {
+    position: relative;
+    font-size: 20px;
+    top: 45px;
+    text-align: justify;
+    text-align: center;
+    animation: fade-inout 3s normal;
+}
+.paragraph-introduction p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ------------------------------------FOOTER--------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 245, 214);
+    position: absolute;
+    top: 1000px;
+    height: 60px;
+    width: 1519px;
+}
+footer img {
+    margin-right: 5px;
+    height: 20px;
+}

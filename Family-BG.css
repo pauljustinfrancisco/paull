@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+/* ------------------------------------HEADER--------------------------------- */
+
+/* Kabuuang header */
+header {
+    background-color: white;
+    padding: 10px;
+    color: #444141;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Layout ng container nung navigations */
+nav {
+    display: flex;
+    align-items: center;
+}
+/* Design ng mga navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+/* Distance ng bawat navigations */
+nav li {
+    margin-right: 35px;
+    font-size: 14px;
+    transition: 0.4s;
+}
+/* Design kapag naka-point yung mouse sa bawat navigations (About me, etc.) */
+nav li:hover {
+    margin-top: 20px;
+}
+/* Design ng anchors */
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+/* Animation kapag pinindot */
+nav a:hover {
+    transform: scale(1.1);
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(215, 148, 61);
+    padding: 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+/* Layout ng logo ko */
+.header-my-picture {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px transparent;
+    overflow: hidden;
+    margin-left: 10px;
+}
+/* Layout ng mismong image ng logo ko */
+.header-my-picture img {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+/* Animation kapag naka-point yung mouse sa logo */
+.header-my-picture img:hover {
+    transform: scale(1.2);
+}
+/* Layout ng logo name ko */
+.header-my-name a {
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+/* Animation kapag naka-point yung mouse sa logo name */
+.header-my-name a:hover {
+    transition: 0.4s;
+    color: rgb(215, 148, 61);
+}
+
+/* ------------------------------------BODY--------------------------------- */
+
+@keyframes fade-inout {
+    100% {opacity: 1;}
+    0% {opacity: 0;}
+}
+main {
+    animation: fade-inout 2.5s normal;
+}
+
+.bg-image-introduction img {
+    position: relative;
+    left: 150px;
+
+    opacity: 80%;
+    margin: 50px 0px;
+    height: 900px;
+    width: 1200px;
+}
+.bg-color {
+    position: absolute;
+    top: 120px;
+    left: 150px;
+
+    background-color: yellow;
+    opacity: 70%;
+    height: 900px;
+    width: 700px;
+}
+.introduction-background {
+    position: absolute;
+    top: 400px;
+    left: 250px;
+
+    width: 200px;
+}
+.introduction-background h2 {
+    color: rgb(2, 2, 54);
+    font-size: 90px;
+}
+.introduction-background h4 {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+.front-img {
+    position: absolute;
+    top: 350px;
+    left: 750px;
+
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+    border: 2px transparent;
+    
+}
+.front-img img {
+    position: relative;
+    right: 160px;
+    height: 700px;
+}
+
+/*  */
+.parent-profile-bg {
+    background-color: antiquewhite;
+    height: 700px;
+}
+.my-parents {
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px;
+}
+.my-parents h4 {
+    position: relative;
+    top: 50px;
+    left: -45px;
+    font-size: 50px;
+}
+.my-parents img {
+    height: 70px; 
+    margin-top: 30px;
+
+    position: relative;
+    top: -50px;
+    left: 120px;
+}
+
+/*  */
+.my-parents-profile {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+   
+}
+/* MOTHER */
+.my-mother {
+    height: 400px;
+    width: 300px;
+}
+.in-mother {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.in-mother p {
+    margin-top: 10px;
+}
+.mother-img {
+    display: flex;
+    justify-content: center;
+}
+.mother-img img {
+    height: 200px;
+    border-radius: 50%;
+}
+.line img{
+    position: relative;
+    top: -40px;
+    height: 400px;
+    width: 30px;
+    
+}
+/* FATHER */
+.my-father {
+    height: 400px;
+    width: 300px;
+}
+.in-father {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.in-father   p {
+    margin-top: 10px;
+}
+.father-img {
+    display: flex;
+    justify-content: center;
+}
+.father-img img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* MARRIAGE STORY */
+
+.my-parents-story {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+/* ICON */
+.my-parents-story img {
+    height: 70px; 
+    margin-top: 30px;
+
+    position: relative;
+    top: 0px;
+    left: 270px;
+}
+
+/* MARRIAGE STORY */
+.my-parents-story h4 {
+    font-size: 50px;
+    position: relative;
+    top: 100px;
+    margin-bottom: 150px;
+}
+.explan-cont {
+    display: flex;
+}
+.explanation {
+    display: flex;
+}
+.explanation-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 400px;
+    width: 755px;
+}
+.explanation img {
+    height: 400px;
+    margin-left: 50px;
+}
+.anniversary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.anniversary img {
+    margin-left: 0px;
+    height: 70px; 
+}
+/* OUR FAMILY */
+.our-family {
+    height: 750px;
+    margin-top: 90px;
+    background-color: rgb(236,210,196);
+}
+.family-explanation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.family-explanation h3 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+.family-explanation p {
+    margin-bottom: 50px;
+}
+.family-pics {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.family-pics img {
+    height: 400px;
+    border-radius: 10px 50px 10px 50px;
+    box-shadow: 0px 1px 20px gray;
+}
+
+
+/* ------------------------------------FOOTER--------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 245, 214);
+    position: absolute;
+    top: 2700px;
+    height: 60px;
+    width: 1519px;
+}
+footer img {
+    margin-right: 5px;
+    height: 20px;
+}
